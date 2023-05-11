@@ -1,0 +1,456 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dimension by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Jack Hayes</h1>
+								<p>Analyst|Python|SQL|PowerBI
+									 <a href="https://html5up.net/license">Creative Commons</a></p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">Intro</a></li>
+								<li><a href="#Python">Python</a></li>
+								<li><a href="#SQL">SQL</a></li>
+								<li><a href="#PowerBI">PowerBI</a></li>
+								<li><a href="#modeling">Modeling</a></li>
+								<li><a href="#contact">contact</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">Intro</h2>
+								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<p>My is Jack and I am a budding data analyst, specializing in the area of climate and sustainability. ESG is a way in whcih businesses can be better going forward and through analytics, businesses can target growth areas to drive the best change and get better result. Having recently graaduated from FU Berlin with a master's in Physics and Previously from Swansea Universty with a BSc in Physics I have used the skills I learnt to work inovotive solutions to a range of problems in the business and enviromental spheres.</p>
+								<p>I have used data analytics in my own business to gain isights into customer satisfaction and used machine learning systems to look at what content, styles and times will suit clients and deliver growth. I would like to use these skills moving forward to speed up growth in the world of climate, environment and sustainablity and through this website woul like to demonstraite my skills in this area.</p>
+							</article>
+
+						<!-- Python -->
+							<article id="Python">
+								<h2 class="major">Recipe Suggestor</h2>
+								<span class="image main"><img src="images/1679879654909.png" alt="" /></span>
+								<p>This project uses both a range of different packages and skills to develop a recipe suggester based on a dataset of users and recipes from food.com to create a GUI that allows the user to find a recipe based on ingredients input into the program.</p>
+								<p>To begin I used the data from food.com to show recipe rating distribution#group recipies and user IDs then I did a short analysis for users and recipies, mapped the values of rating into the train and test data sets and applied centered cosine to the dataframe to minimize the differences between the “hard raters” and “easy raters.” To measure the performance of this recommendation engine in the next steps, I split the dataframe into ¾ train data set and ¼ test data set. There are two major types of memory-based collaborative filtering. User-based: “Users who are similar to you also like …” Item-based: “Users who like this item also like …”, For this we will use user based to make the GUI simpler.</p>
+								<p>Once the model was created I used TKinter to generate a user Frienly GUI. This GUI is able to be reused and changed upon the user command and takes images from the food.com website using beautiful soup for each recipe the user picks to give the user a clearer idea. To improve I would like to have the model seperatly contained so as not to load it everytime. Get immages also in a seperate database to decrease loading times, include images for suggested recipies and also improve the UI/UX design.</p>
+								<p>	<a href=https://github.com/Jack1Hayes/recipe-suggester/tree/main>See the Project</a></p>
+
+								<h2 class="major">Manager Setiment</h2>
+								<span class="image main"><img src="images/skysports-premier-league-managers_4365830.jpg" alt="" /></span>
+								<p>This project uses a range of simple packages and a twitter API that can bu used to first scrape information from wikipedia to generate a current list of managers of premier league clubs. Using these premier league clubs twitter handles and Tweepy I was able to scrape tweets about the managers of each clubs using key words and the names of the individual managers.</p>
+								<p>Having scrapped the internet using beautifulsoup and used Tweepy to access tweets I used the Vader and Textblob to analyse each of the tweets about the managers of all the clubs and averaged the score to get a general feeling about each manager of every club. Along side this information I used beautiful soup abain to look at the current league table and displayed that information alongside the sentimnt analysis to use for a later model that would use data to predict the likelyhood of a manager's firing.</p>
+								<p>For future improvements I would like to use the ddata to create a model of a manager's liklihood of beig fired. Also I would like to display the data of the season in a powerBI dashboard to get a clear understanding of the fans' feeling across the season. Aslo I would like to automate this program so it changes after every round of games.</p>
+								<p>	<a href=https://github.com/Jack1Hayes/Manager-sentiment>See the Project</a></p>
+
+								<h2 class="major">BA review analysis</h2>
+								<span class="image main"><img src="images/download.png" alt="" /></span>
+								<p>This was a project on Forge.com that wanted users to use some review data to generate a sentiment analysis and also look into the words that were used to see what were some of the positives and neagitve points being spoken about.</p>
+								<p>To begin this project I used beautiful soup to scrape some extra insights into the review data that had already been given to us. Using the information gathered I was able to cross check the results as it contained information and evaluation about general catagories and overall review of the experience.</p>
+								<p>First using both Vader and textblob I looked at the general feeling of the reviews that were given. We found that around 57% were negative which matched well with the extra information taken from the page where 55% of users recommened the company.</p>
+								<p>Finally, I used pyLDAvis and nltk to generate some insights into what was being spoken about in the reviews. First cleaning the data before vectorizing it in nltk and gensim to create a visualization of the different catagories and topics being spoken about in the reviews. I found service, cleanliness and food being spoken about most regularly.</p>
+								<p>	<a href=https://github.com/Jack1Hayes/BA_-review_Analysis>See the Project</a></p>
+								
+								<h2 class="major">Experiments Automation</h2>
+								<span class="image main"><img src="images/Picture1.jpg" alt="" /></span>
+								<p>During my internship phase, as I completed my masters thesis, I was involved in 2D magnetic materials creation and evaluation. We had to use a range of different experiemnts and devices to first create and then evaluate the materials that we wanted to measure. Some couldn't be automated and some already came with software. There were 2 that I helped to automate, I will not go into the science here but will proveide links but will explain breifly what the programs do.</p>
+								<p>The first was an auger control. The auger scaner is used to scan for electrons that are released at certain energy levels, which can be used to determine a materials makeup and structure. For this I had to program an energy source to scan through a range of energies and collect data as it did so. I used a basic GUI to input ranges and also how often results should be measured, all this was plotted live to see if parameters needed to be changed.</p>
+								<p>The second was a TR-MOKE. The moke is used to measure the magnetism of a material and here I designed a program that plotted the measurments live so that we could first calbrate the experiment. Once the experiment was calibrated it was able to take measurments and save them to a CSV file for later analysis. This also needed inputs for the strength and direction of the magnetisation.</p>
+								<p>	<a href=https://github.com/Jack1Hayes/Masters-Labs>See the Project</a></p>
+
+								<h2 class="major">Tik-Tak-Toe</h2>
+								<span class="image main"><img src="images/91DHi7Rd66L.jpg" alt="" /></span>
+								<p>A simple project that helped me iwth the understanding of classes and some basic algorithms. For this project I created both a player.py and game.py, where the game I was able to build a board and some basic user interface and also use an algorithm to make the oponent unbeatable.</p>
+								<p>I would like to make a beter user interface for this project and also add some different difficulty levels using different algorithms.</p>
+								<p>	<a href=https://github.com/Jack1Hayes/python-projects>See the Project</a></p>
+								
+							</article>
+
+						<!-- SQL -->
+							<article id="SQL">
+								<h2 class="major">Covid exploration</h2>
+								<span class="image main"><img src="images/covid.jpg" alt="" /></span>
+								<p>This uses data from covid rates around the world to look into more detail about survival, death and contraction rates, amoung other things. It looks mainly at the UK but can be easily changed to focus on other countries.	</p>
+								<p>	<a href=https://github.com/Jack1Hayes/MySQL/blob/main/covid%20exploration.sql>See the Project</a></p>
+								
+								<h2 class="major">Housing data cleaning</h2>
+								<span class="image main"><img src="images/housing.jpg" alt="" /></span>
+								<p>This uses data from sales data in the nashville area. This data was cleaned and parsed to make the data beter visually to use for later analysis or visualization.	</p>
+								<p>	<a href=https://github.com/Jack1Hayes/MySQL/blob/main/cleaning.sql>See the Project</a></p>
+							
+								<h2 class="major">Sales data</h2>
+								<span class="image main"><img src="images/sales.png" alt="" /></span>
+								<p>This uses sales data from a store and looks at the best moths for sales, what are some of the best product lines and customers. Looking at insights and information in a quick easily understandable way.</p>
+								<p>	<a href=https://github.com/Jack1Hayes/MySQL/blob/main/sales.sql>See the Project</a></p>
+							
+								<h2 class="major">Happiness metrics</h2>
+								<span class="image main"><img src="images/happy.jpg" alt="" /></span>
+								<p>This uses sales data from a kaggle data set on countries happiness and looks at which countries are the happiest and why they are. It also looks at regions and what are the metrics that affect happiness in each region.</p>
+								<p>	<a href=https://github.com/Jack1Hayes/MySQL/blob/main/happiness.sql>See the Project</a></p>
+							
+								<h2 class="major">Stratascratch problems</h2>
+								<span class="image main"><img src="images/strat.jpg" alt="" /></span>
+								<p>Solutions to a range of different medium and hard stratascratch problems with the weblink for each problem.</p>
+								<p>	<a href=https://github.com/Jack1Hayes/MySQL/blob/main/stratproblems>See the Project</a></p>
+							
+							</article>
+
+						<!-- PowerBI -->
+						<article id="PowerBI">
+							<h2 class="major">Environmental analysis</h2>
+							<span class="image main"><img src="images/environment.jpg" alt="" /></span>
+							<p>This report uses a range of environmental data to create dashboards that show , countries polution and per capita polution. It shows industry and the affec each has on the environment. How these effects are being felt in diffent ways and also what is the progress on some of the soutions like renewable energy and eletric cars over time and for each country.</p>
+							<p>	<a href=https://github.com/Jack1Hayes/powerBI_/blob/main/Polution%20countries.pbix>See the Project</a></p>
+						
+							<h2 class="major">HR dashboard</h2>
+							<span class="image main"><img src="images/HR.png" alt="" /></span>
+							<p>This uses data from a companies HR devision to create a user friendly dashboard that looks good and uses app like design to look good and have a great ease of use.</p>
+							<p>	<a href=https://github.com/Jack1Hayes/powerBI_/blob/main/HR%20dashboard.pbix>See the Project</a></p>
+						
+							<h2 class="major">Turkish Airways Report</h2>
+							<span class="image main"><img src="images/TA.png" alt="" /></span>
+							<p>This uses data taken from the end of year turkish airways report and scraped from twitter to build a report that shows how the airline is performing and to see specifically how the covid pandemic affected their busniess in different areas.</p>
+							<p>	<a href=https://github.com/Jack1Hayes/powerBI_/blob/main/TA.pbix>See the Project</a></p>
+							
+							<h2 class="major">Sales report</h2>
+							<span class="image main"><img src="images/Salesaus.png" alt="" /></span>
+							<p>This uses data uses sales data from a company in Australia to look at where are sales most prelivent, what are some of the best sellers and what stores are performing well and possible reasons for these sales.</p>
+							<p>	<a href=https://github.com/Jack1Hayes/powerBI_/blob/main/Aus%20sales.pbixSee>See the Project </a></p>
+						
+							<h2 class="major">Mobiles</h2>
+							<span class="image main"><img src="images/mob.png" alt="" /></span>
+							<p>This uses data uses information about mobile phones to see which one offers the best performance and the best value across the market. </p>
+							<p>	<a href=https://github.com/Jack1Hayes/powerBI_/blob/main/mobiles.pbix>See the Project</a></p>
+						
+
+						</article>
+
+						<!-- modeling -->
+						<article id="modeling">
+							<h2 class="major">Store data analysis <br>
+								 and future sales predictions</h2>
+							<span class="image main"><img src="images/sales.png" alt="" /></span>
+							<p>Using a data set from Kaggle.com, I first did a deap dive into the data of the csv file. I looked at some of the best performing stores and products. I saw how sales changed over time and the trends of different products over time and look at the daily distribution of products sold. I cleaned the data checking for any duplicate rows, and missing information and mistakes before creating visuals in matplotlib to show Here we can clearly see the trend increasing in the category "gifts", "board games" and "games for ps4", while in other categories the trend seems to decrease.</p>
+							<p>Once I finished the deep dive I created a model to look at the fture sales for the store. First splitting the data into test and train. I then LGBMRegressor from lightgmb. I made a train dataframe for the model using information from different years, before cleaning the data and putting it into a label encoder. Once the model was trained, I used the test data to look at the RMSE, which was 0.41 and to see what were some of the important features of the model.</p>
+							<p>	<a href=https://github.com/Jack1Hayes/store-analysis-and-future-prediction/blob/main/predict_future_sales_analysis.ipynb>See the Project</a></p>
+						
+							<h2 class="major">Chatbot</h2>
+						   <span class="image main"><img src="images/chatbot.jpg" alt="" /></span>
+						   <p>This is a simple chatbot that uses the bog of words algorithm to generate responses for a small business that can be adapted to any number of situations. First by generating some intents for a range of specific questions a business might come up with and thier answers we can give our model something to work with. The words for these questions are stemmed by tokenizing them and the  bag of words is created from one hot encoding</p>
+						   <p>Once we have all the information sorted into the correct formate, I built the model and saved it. From this I built a small interface that allows people to interact with the model, asking it questions and letting it answer.</p>
+						   <p>	<a href=https://github.com/Jack1Hayes/Chatbot/blob/main/Chatbot.ipynb>See the Project</a></p>
+					   
+						</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="Email">Email</label>
+											<label for="Email1">Hayesi@live.com</label>
+										</div>
+										<div class="field half">
+											<label for="Phone">Phone</label>
+											<label for="Phone1">+447379834851</label>
+										</div>
+									</div>
+								</form>
+								<ul class="icons">
+									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
