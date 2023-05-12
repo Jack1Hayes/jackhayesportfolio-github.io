@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 <!--
-	Dimension by HTML5 UP
+	Jack Hayes Portfolio
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
-		<title>Dimension by HTML5 UP</title>
+		<title>Jack Hayes Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -165,7 +165,30 @@
 						   <p>This is a simple chatbot that uses the bog of words algorithm to generate responses for a small business that can be adapted to any number of situations. First by generating some intents for a range of specific questions a business might come up with and thier answers we can give our model something to work with. The words for these questions are stemmed by tokenizing them and the  bag of words is created from one hot encoding</p>
 						   <p>Once we have all the information sorted into the correct formate, I built the model and saved it. From this I built a small interface that allows people to interact with the model, asking it questions and letting it answer.</p>
 						   <p>	<a href=https://github.com/Jack1Hayes/Chatbot/blob/main/Chatbot.ipynb>See the Project</a></p>
-					   
+								
+						   <h2 class="major">Twitter Disaster Preidictor</h2>
+						   <span class="image main"><img src="images/amb.jpg" alt="" /></span>
+						   <p>For this project I used a dataset from kaggle.com, that takes tweets of different incidents and tells us if those tweets are real of fake. From this information I created a model taht analysis the language of a disaster tweet and measures whether or not it is real or not.</p>
+							<p>First was to clean the data, removing any unecessary words using the ntlk stop words before tokenizing and vecotizing using sklearn packages the words to use later in the model. </p>
+							<p> Once the data was cleaned I split the data into a test and train set before using tensorflow to create a model that lookeed at the numbers from the ntlk vectorization and predicted the liklyhood of each tweet being real between 0, 1. </p>
+							<p>Finally I analysed the model, looking at the test data and seeing the probability density of each prediction. Also using a confusion matrix I got an accuracy of 0.78 </p>
+						   <p>	<a href=https://github.com/Jack1Hayes/Chatbot/blob/main/Chatbot.ipynb>See the Project</a></p>
+								
+
+						   <h2 class="major">Passenger predictor</h2>
+						   <span class="image main"><img src="images/plane.jpg" alt="" /></span>
+						   <p>For this project, coming from the forage BA section, I had to use passanger data to first try and create a model that could predict whether or not a passanger would book a flight based on a number of data points then to see which of those data points was the most relevent for the model. </p>
+						   <p>First, a dive into the data was done to see if there were any relationships to be found in the data itself. There were some correlations between orgin of booking and also length of flight but overall those correlations were weak. Next, the data needed to be put into catagorical and numerical data and the catagorical data needed to be encoded to give better results. Once this was done I used 3 different model types to see which offered the best results.</p>
+							<p>These models were, linear classifiers and also nueral network models using tensor flow. Neither were able to generate a model that could generate predictions and it sees that more data would be needed before a reliable model could be created.</p>
+						   <p>	<a href=https://github.com/Jack1Hayes/passenger_predictor>See the Project</a></p>
+							
+						   <h2 class="major">emotion recognition</h2>
+						   <span class="image main"><img src="images/emo.jpg" alt="" /></span>
+						   <p>This took data from a kaggle dataset on human faces, which catagorized them into 5 different emotional classes. The aim was to create a program that could be opened in the users webcam and tell them how the user was feeling based on their facial features.</p>
+						   <p>It started by breaking down the picture data into its pixel units. Once these were put into a table they were split into test and train sets and passed into a catagorical neural network model from tensorflow.</p>
+							<p>The model has not been tested using any evaluation techniques but, using the cam program alongside the model, after saving it, allows the user to test for themselves and see how well it works.</p>
+						   <p>	<a href=https://github.com/Jack1Hayes/emotion-recognition/blob/main/emo.py>See the Project</a></p>
+							
 						</article>
 
 						<!-- Contact -->
